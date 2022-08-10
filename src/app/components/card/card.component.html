@@ -1,0 +1,13 @@
+<p ccColor="lightgreen">card works!</p>
+<div *ngFor="let card of cards" ccColor="gray">
+{{card}}
+</div>
+<div *ngFor="let technical of tickerTechincals" ccColor>
+    MohanramScore {{technical.MohanramScore}}
+    <div *ngFor="let item of technical | myKeyValue">
+        {{item.key | uppercase}}:{{item.value}}
+    </div>
+</div>
+
+<input ccColor/>
+<button (click)="handleGetCards()" ccColor>GetCards</button>
